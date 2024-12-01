@@ -397,18 +397,26 @@ input[type="submit"] {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.75);
-    /* Dark background for high contrast */
-    width: 50px;
-    /* Adjust width */
-    height: 50px;
-    /* Adjust height */
-    border-radius: 50%;
-    /* Circular background */
+  background-color: rgba(0, 0, 0, 0.6); /* High-contrast dark background */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Circular background for better visuals */
 }
 
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Darker on hover */
+  background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
